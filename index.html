@@ -3,7 +3,6 @@
   <head>
     <title>CSS Styles</title>
 
-    <!-- Updated author -->
     <meta name="author" content="Hasina Khoajakhail"> 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,9 +28,9 @@
 
       /* End Embedded Styles */
     </style>
-    
-    <!-- Add Stylesheet link in the <head> of the page -->
-    <!-- (You will add this in the style-sheets branch) -->
+
+    <!-- External Style Sheet -->
+    <link rel="stylesheet" href="_css/format.css" type="text/css">
 
   </head> 
 
@@ -46,44 +45,37 @@
 
     <h2>Example of a Rule</h2>
     
-    <p>A Rule consists of two parts: Selector - that part before 
-      the left curly brace, and Declaration - that part within the curly braces.
+    <p>A <span class="selector">Selector</span> is the part before 
+      the left curly brace, and a <span class="declaration">Declaration</span> 
+      is the part within the curly braces.
     </p>
 
-    <p>h1 { color:red }</p>
+    <p class="rule">
+      <span class="selector">h1</span> { 
+        <span class="property">color</span>: 
+        <span class="value">red</span> 
+      }
+    </p>
 
     <h2>Examples of a Declaration</h2>
 
-    <p>A declaration has two parts separated by a colon: Property - that 
-      part before the colon, and Value - that part after the colon.
+    <p>A <span class="declaration">Declaration</span> has two parts separated by a colon: 
+      the <span class="property">Property</span> (before the colon) and the 
+      <span class="value">Value</span> (after the colon).
     </p>
 
-    <p>color:red</p> 
+    <p>
+      <span class="property">color</span>:
+      <span class="value">red</span>
+    </p> 
 
-    <!-- Inline Style TODO #1 -->
+    <!-- Inline Style #1 -->
     <h2 style="color: #CC0000;">Grouping Selectors</h2>
 
-    <p>Group the selectors into a comma-separated list and only write the declaration.</p>
+    <p>Group the <span class="selector">selectors</span> into a comma-separated list and only write the 
+      <span class="declaration">declaration</span>.
+    </p>
 
     <ul>
-      <li>h1 { font-weight: bold }</li>
-      <li>h2 { font-weight: bold }</li> 
-      <li>h3 { font-weight: bold } becomes:</li> 
-      <li>h1, h2, h3 { font-weight: bold }</li>
-    </ul>
-
-    <!-- Inline Style TODO #2 -->
-    <h2 style="color: #CC0000;">Grouping Declarations</h2>
-
-    <p>CSS rules often have more than one declaration.</p>
-
-    <p>Group declarations that relate to the same selector into a semicolon-separated list.</p>
-
-    <ul>
-      <li>h1 { color: red }</li>
-      <li>h1 { text-align: center } becomes:</li>
-      <li>h1 { color: red; text-align: center; }</li>
-    </ul>     
-
-  </body>
-</html>
+      <li><span class="selector">h1</span> { <span class="property">font-weight</span>: <span class="value">bold</span> }</li>
+      <li><span class="selector">
