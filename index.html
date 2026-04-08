@@ -77,5 +77,70 @@
     </p>
 
     <ul>
-      <li><span class="selector">h1</span> { <span class="property">font-weight</span>: <span class="value">bold</span> }</li>
-      <li><span class="selector">
+      <li>
+        <span class="selector">h1</span> { 
+          <span class="property">font-weight</span>: 
+          <span class="value">bold</span> 
+        }
+      </li>
+
+      <li>
+        <span class="selector">h2</span> { 
+          <span class="property">font-weight</span>: 
+          <span class="value">bold</span> 
+        }
+      </li>
+
+      <li>
+        <span class="selector">h3</span> { 
+          <span class="property">font-weight</span>: 
+          <span class="value">bold</span> 
+        } becomes:
+      </li>
+
+      <li class="highlight">
+        <span class="selector">h1</span>, 
+        <span class="selector">h2</span>, 
+        <span class="selector">h3</span> { 
+          <span class="property">font-weight</span>: 
+          <span class="value">bold</span> 
+        }
+      </li>
+    </ul>
+
+    <!-- Inline Style #2 -->
+    <h2 style="color: #CC0000;">Grouping Declarations</h2>
+
+    <p>CSS rules often have more than one <span class="declaration">declaration</span>.</p>
+
+    <p>Group declarations that relate to the same 
+      <span class="selector">selector</span> into a semicolon-separated list.
+    </p>
+
+    <ul>
+      <li>
+        <span class="selector">h1</span> { 
+          <span class="property">color</span>: 
+          <span class="value">red</span> 
+        }
+      </li>
+
+      <li>
+        <span class="selector">h1</span> { 
+          <span class="property">text-align</span>: 
+          <span class="value">center</span> 
+        } becomes:
+      </li>
+
+      <li class="highlight">
+        <span class="selector">h1</span> { 
+          <span class="property">color</span>: 
+          <span class="value">red</span>; 
+          <span class="property">text-align</span>: 
+          <span class="value">center</span>; 
+        }
+      </li>
+    </ul>
+
+  </body>
+</html>
